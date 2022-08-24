@@ -14,9 +14,9 @@ int main()
 	int temp;
     for(int i = 0; i < 14; i++)
     {
-		for (int j = 0; j < 15 - i - 1; j++)
+		for (int j = 0; j < 14 - i; j++)
 		{
-			if (first[j] < first[j - 1])
+			if (first[j] > first[j + 1])
 			{
 				temp = first[j];
 				first[j] = first[j + 1];
